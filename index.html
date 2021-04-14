@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Multiplayer Game</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+    <script src="p5.play.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-database.js"></script>
+
+
+    <script>
+       var firebaseConfig = {
+    apiKey: "AIzaSyDYsGnzQUy6ibbFY3mS7NSRmv5oGsBb3Mk",
+    authDomain: "rocket-league-6c6ed.firebaseapp.com",
+    databaseURL: "https://rocket-league-6c6ed-default-rtdb.firebaseio.com",
+    projectId: "rocket-league-6c6ed",
+    storageBucket: "rocket-league-6c6ed.appspot.com",
+    messagingSenderId: "519473945571",
+    appId: "1:519473945571:web:536eef9e55270588c71ed6",
+    measurementId: "G-K6V28GE0P8"
+  };
+    firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="js/Player.js"></script>
+    <script src="js/Form.js"></script>
+    <script src="js/Game.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+  </head>
+  <body>
+    <script src="sketch.js"></script>
+  </body>
+</html>
